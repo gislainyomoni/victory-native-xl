@@ -1,6 +1,7 @@
 {
-  "name": "victory-native-xl-monorepo",
-  "private": true,
+  "name": "victory-native-yomoni",
+  "version": "1.0.0",
+  "private": false,
   "workspaces": [
     "lib",
     "example"
