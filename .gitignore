@@ -5,7 +5,7 @@ node_modules/
 
 # Expo
 example/.expo/
-dist/
+#dist/
 web-build/
 example/android/*
 example/ios/*
