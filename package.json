@@ -1,17 +1,17 @@
 {
-  "name": "victory-native-yomoni",
+  "name": "victory-native-xl",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "workspaces": [
     "lib",
     "example"
   ],
   "license": "MIT",
-  "react-native": "src/index",
+  "react-native": "lib/dist/index",
   "scripts": {
     "lint": "eslint --ext .js,.ts,.tsx example lib",
     "typecheck": "tsc --noEmit",
-    "build": "shx cp README.md ./lib/README.md && yarn workspace victory-native build",
+    "build": "yarn workspace victory-native build",
     "dev:lib": "yarn workspace victory-native dev",
     "dev:example": "yarn workspace example start",
     "dev": "concurrently -n lib,example -c blue,green \"yarn dev:lib\" \"yarn dev:example\"",
@@ -20,7 +20,8 @@
     "test:watch": "yarn workspace victory-native test:watch",
     "changeset": "changeset",
     "check:code": "yarn lint && yarn typecheck && yarn test",
-    "version": "yarn changeset version && yarn install --no-frozen-lockfile"
+    "version": "yarn changeset version && yarn install --no-frozen-lockfile",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
