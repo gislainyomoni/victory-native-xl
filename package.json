@@ -8,6 +8,7 @@
   ],
   "license": "MIT",
   "react-native": "lib/dist/index",
+  "types": "lib/dist/index.d.ts",
   "scripts": {
     "lint": "eslint --ext .js,.ts,.tsx example lib",
     "typecheck": "tsc --noEmit",
