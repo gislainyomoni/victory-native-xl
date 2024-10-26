@@ -20,8 +20,7 @@
     "test:watch": "yarn workspace victory-native test:watch",
     "changeset": "changeset",
     "check:code": "yarn lint && yarn typecheck && yarn test",
-    "version": "yarn changeset version && yarn install --no-frozen-lockfile",
-    "postinstall": "yarn build"
+    "version": "yarn changeset version && yarn install --no-frozen-lockfile"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
